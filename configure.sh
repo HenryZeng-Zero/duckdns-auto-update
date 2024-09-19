@@ -55,6 +55,7 @@ function is_target() {
     if [[ $sub =~ ":" ]]; then
         sub=${line%:*} # 提取 ':' 左侧内容
 
+        # 
         if [[ "$sub" =~ "#" ]]; then
             return $LINE_NOT_TARGET
         fi
